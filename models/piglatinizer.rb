@@ -22,4 +22,4 @@ class PigLatinizer
 
 end
 
-puts "#{PigLatinizer.new("hello").create}"
+puts "#{PigLatinizer.new("hello how").create}"
