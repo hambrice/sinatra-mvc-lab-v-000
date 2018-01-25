@@ -10,7 +10,7 @@ class PigLatinizer
   def create
     final = []
     array = self.text.split(" ")
-    array.collect do |word|
+    @new_text = array.collect do |word|
       word = word.split(/([aeiou].*)/)
       word[2] = word[0]
       word.shift
@@ -22,4 +22,4 @@ class PigLatinizer
 
 end
 
-puts "#{PigLatinizer.new("hello how").create}"
+#puts "#{PigLatinizer.new("hello how").create}"
