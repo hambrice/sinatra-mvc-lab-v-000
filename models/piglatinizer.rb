@@ -12,8 +12,8 @@ class PigLatinizer
     word = word.split(/([aeiou].*)/)
     word[2] = word[0]
     word.shift
-    word.join += "ay"
-    #word += "ay"
+    word = word.join
+    word += "ay"
     end
     word
   end
