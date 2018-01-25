@@ -4,9 +4,9 @@ class PigLatinizer
   attr_accessor :text
 
 
-  def piglatinize
+  def piglatinize(word)
     final = []
-    array = self.text.split(" ")
+    array = word.split(" ")
     @new_text = array.collect do |word|
       word = word.split(/([aeiou].*)/)
       word[2] = word[0]
