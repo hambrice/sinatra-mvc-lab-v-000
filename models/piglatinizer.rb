@@ -9,7 +9,7 @@ class PigLatinizer
     if array.first.match(/[aeiou]/)
       word += "way"
     else
-    array = word.split(/([aeiou].*)/)
+    word = word.split(/([aeiou].*)/)
     word[2] = word[0]
     word.shift
     word.join
