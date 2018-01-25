@@ -12,10 +12,9 @@ class PigLatinizer
     array = self.text.split(" ")
     array.collect do |word|
       word = word.split(/([aeiou].*)/)
-      word[1] += "ay"
       word[2] = word[0]
       word.shift
-      word.join
+      word.join += "ay"
     end.join
   end
 binding.pry
