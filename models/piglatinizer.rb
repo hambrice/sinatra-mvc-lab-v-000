@@ -5,11 +5,11 @@ class PigLatinizer
 
 
   def piglatinize(word)
-    array = word.downcase.split('')
-    if array.first.match(/[aeiou]/)
+    array = word.split('')
+    if array.first.downcase.match(/[aeiou]/)
       word += "way"
     else
-    word = word.downcase.split(/([aeiou].*)/)
+    word = word.split(/([aeiou].*)/)
     word[2] = word[0]
     word.shift
     word = word.join
