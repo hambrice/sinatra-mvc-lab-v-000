@@ -3,11 +3,8 @@ require 'pry'
 class PigLatinizer
   attr_accessor :text
 
-  def initialize(text)
-    @text = text
-  end
 
-  def create
+  def piglatinize
     final = []
     array = self.text.split(" ")
     @new_text = array.collect do |word|
