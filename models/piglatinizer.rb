@@ -7,16 +7,15 @@ class PigLatinizer
   def piglatinize(word)
     array = word.split('')
     if array.first.match(/[aeiou]/)
-      word=
+      word += "way"
+    else
     array = word.split(/([aeiou].*)/)
     word[2] = word[0]
     word.shift
-    array.collect do |word|
-      word = word.split(/([aeiou].*)/)
-      
-      word.shift
-      word.join
+    word.join
+    word += "ay"
     end
+    word
   end
 #binding.pry
 
