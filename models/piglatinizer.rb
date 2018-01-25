@@ -14,12 +14,12 @@ class PigLatinizer
       word = word.split(/([aeiou].*)/)
       word[2] = word[0]
       word.shift
-      word.join
+      word = word.join + "ay"
       binding.pry
-      word += "ay"
+      #word += "ay"
     end.join
   end
-binding.pry
+#binding.pry
 
 
 end
