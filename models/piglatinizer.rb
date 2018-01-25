@@ -1,3 +1,5 @@
+require 'pry'
+
 class PigLatinizer
 
   def initialize(text)
@@ -16,9 +18,11 @@ class PigLatinizer
           arr3[1] = arr2[0]
         end
       end
+    end
+      binding.pry
         arr3
     end
-        
-      
-  
+
+
+
 end
