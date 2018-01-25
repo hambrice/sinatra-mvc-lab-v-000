@@ -17,7 +17,7 @@ class PigLatinizer
       word.shift.join
     end.join
   end
-
+binding.pry
 
 
 end
