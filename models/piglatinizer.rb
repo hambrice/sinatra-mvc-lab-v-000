@@ -26,3 +26,5 @@ class PigLatinizer
 
 
 end
+
+PigLatinizer.new("hello").create
