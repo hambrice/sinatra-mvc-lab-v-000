@@ -15,8 +15,6 @@ class PigLatinizer
       word[2] = word[0]
       word.shift
       word = word.join + "ay"
-      binding.pry
-      #word += "ay"
     end.join
   end
 #binding.pry
@@ -24,4 +22,4 @@ class PigLatinizer
 
 end
 
-PigLatinizer.new("hello").create
+puts "#{PigLatinizer.new("hello").create}"
