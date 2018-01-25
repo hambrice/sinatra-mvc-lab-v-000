@@ -15,6 +15,7 @@ class PigLatinizer
       word[2] = word[0]
       word.shift
       word.join
+      binding.pry
       word += "ay"
     end.join
   end
