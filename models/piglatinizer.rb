@@ -8,6 +8,7 @@ class PigLatinizer
   end
 
   def create
+    final = []
     array = self.text.split(" ")
     array.each do |word|
       arr=word.split("")
@@ -17,11 +18,13 @@ class PigLatinizer
           arr3 = []
           arr3[0] = arr2[1]
           arr3[1] = arr2[0]
+          new_word = l + arr3.join + "ay"
+          final << new_word
         end
       end
     end
       binding.pry
-        arr3
+        final.join(" ")
     end
 
 
